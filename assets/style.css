@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 20px 30px;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(135deg, #4338ca, #6366f1);
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.header .label {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin: 4px 0 2px;
+}
+
+.header .nim {
+    opacity: 0.85;
+    font-size: 14px;
+}
+
+.ips-badge {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 12px 22px;
+    text-align: center;
+}
+
+.ips-badge span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.ips-badge strong {
+    font-size: 30px;
+}
+
+/* card tabel */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+    margin-bottom: 24px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+th {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    padding: 10px 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.kiri {
+    text-align: left;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* baris mata kuliah yang harus mengulang */
+tr.mengulang,
+tr.mengulang:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+/* badge huruf */
+.huruf {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.huruf-a { background: #dcfce7; color: #166534; }
+.huruf-b { background: #dbeafe; color: #1e40af; }
+.huruf-c { background: #fef9c3; color: #854d0e; }
+.huruf-d { background: #ffedd5; color: #9a3412; }
+.huruf-e { background: #fecaca; color: #991b1b; }
+
+/* badge status */
+.status {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status.lulus {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status.mengulang {
+    background: #b91c1c;
+    color: #fff;
+}
+
+/* ringkasan */
+.ringkasan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.kotak {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.kotak p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.kotak strong {
+    display: block;
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.kotak.aksen {
+    background: #4338ca;
+    color: #fff;
+}
+
+.kotak.aksen p {
+    color: #c7d2fe;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+/* tampilan hp */
+@media (max-width: 700px) {
+    .ringkasan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
