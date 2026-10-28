@@ -37,7 +37,7 @@ $maksSks = batasSks($ips);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartu Hasil Studi</title>
+    <title>Kartu Hasil Studi Semester 3</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -46,7 +46,7 @@ $maksSks = batasSks($ips);
 
     <header class="header">
         <div>
-            <p class="label">Kartu Hasil Studi</p>
+            <p class="label">Kartu Hasil Studi Semester 3</p>
             <h1><?= htmlspecialchars($nama) ?></h1>
             <p class="nim">NIM <?= htmlspecialchars($nim) ?></p>
         </div>
